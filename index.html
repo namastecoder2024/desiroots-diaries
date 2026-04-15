@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DesiRoots Diaries</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">🕉️ DesiRoots Diaries</div>
+  <div>
+    <a onclick="showPage('home')">Home</a>
+    <a onclick="showPage('planner')">Plan</a>
+    <a onclick="showPage('notes')">Notes</a>
+    <a onclick="showPage('tv')">TV</a>
+  </div>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="active home">
+  <h1>✨ Welcome to My Dream World</h1>
+  <h2>DesiRoots Diaries</h2>
+
+  <!-- ✅ FIXED IMAGE PATH -->
+  <img src="image/hanuman.jpg" class="hanuman">
+
+  <p class="quote">"Bhoot Pishach Nikat Nahi Aave"</p>
+  <p class="quote">"Karmanye vadhikaraste ma phaleshu kadachana"</p>
+</section>
+
+<!-- PLANNER -->
+<section id="planner">
+  <h1>📅 Daily Planner</h1>
+
+  <div class="container">
+    <textarea id="study" placeholder="📘 Study Plan..."></textarea>
+    <textarea id="sleep" placeholder="😴 Sleep Plan..."></textarea>
+    <textarea id="project" placeholder="💻 Project Work..."></textarea>
+    <textarea id="vlog" placeholder="🎥 Vlog Plan..."></textarea>
+  </div>
+
+  <button class="submit-btn" onclick="generateNotes()">Submit Plan</button>
+</section>
+
+<!-- NOTES -->
+<section id="notes">
+  <h1>📝 Your Notes</h1>
+  <div id="notesContent" class="notes-box"></div>
+</section>
+
+<!-- TV -->
+<section id="tv">
+  <h1>🎧 Entertainment Zone</h1>
+
+  <div class="tv-box">
+    <input type="text" id="search" placeholder="Search YouTube...">
+
+    <div class="btns">
+      <button onclick="openYouTube()">🔍 YouTube</button>
+      <button onclick="openSpotify()">🎵 Spotify</button>
+    </div>
+
+    <iframe id="player"
+      src="https://www.youtube.com/embed/jfKfPfyJRdk"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+<!-- FOOTER -->
+<footer>
+  <div class="footer-content">
+
+    <h2>🕉️ DesiRoots Diaries</h2>
+    <p>🔥 BornFrom_Effort | Daily Growth | Spiritual Power</p>
+
+    <div class="socials">
+      <a href="#" target="_blank">📸 Instagram</a>
+      <a href="#" target="_blank">📘 Facebook</a>
+      <a href="#" target="_blank">▶️ YouTube</a>
+    </div>
+
+    <p class="footer-quote">
+      "जय हनुमान ज्ञान गुण सागर 🚩"
+    </p>
+
+    <p class="copyright">
+      © 2026 DesiRoots Diaries | All Rights Reserved
+    </p>
+
+  </div>
+</footer>
+<script src="index.js"></script>
+
+</body>
+</html>
